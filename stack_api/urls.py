@@ -11,10 +11,10 @@ router.register('problems', ProblemViewSet)
 router.register('replies', ReplyViewSet)
 router.register('comments', CommentViewSet)
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('v1/api/', include(router.urls)),
+    path('v1/api/account/', include('account.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
