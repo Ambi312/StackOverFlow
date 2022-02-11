@@ -6,6 +6,6 @@ python-decouple
 django-phonenumber-field
 phonenumbers
 twilio
-
-
+djangorestframework-simplejwt
+drf-yasg
 
